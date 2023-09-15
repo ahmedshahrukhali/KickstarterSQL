@@ -1,0 +1,1670 @@
+	#	Time	Action	Message	Duration / Fetch
+3	1	15:35:36	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.000 sec
+3	2	15:36:16	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.pledged > c.goal
+ LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.016 sec
+3	3	15:37:31	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.pledged > c.goal and c.sub_category_id=14
+ LIMIT 0, 1000	299 row(s) returned	0.016 sec / 0.015 sec
+3	4	15:41:52	SELECT * FROM kickstata.campaign
+ LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.000 sec
+3	5	15:42:35	SELECT * FROM kickstata.category
+ LIMIT 0, 1000	15 row(s) returned	0.000 sec / 0.000 sec
+3	6	15:42:49	SELECT * FROM kickstata.country
+ LIMIT 0, 1000	23 row(s) returned	0.016 sec / 0.000 sec
+3	7	15:43:00	SELECT * FROM kickstata.currency
+ LIMIT 0, 1000	14 row(s) returned	0.000 sec / 0.000 sec
+3	8	15:43:03	SELECT * FROM kickstata.sub_category
+ LIMIT 0, 1000	159 row(s) returned	0.016 sec / 0.000 sec
+3	9	15:46:13	SELECT * FROM kickstata.campaign
+ LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.000 sec
+3	10	15:49:03	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.pledged >= c.goal and c.sub_category_id=14
+ LIMIT 0, 1000	301 row(s) returned	0.000 sec / 0.000 sec
+3	11	15:49:33	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14
+ LIMIT 0, 1000	294 row(s) returned	0.000 sec / 0.000 sec
+3	12	15:49:52	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal > 15000
+ LIMIT 0, 1000	51 row(s) returned	0.000 sec / 0.000 sec
+3	13	15:58:20	SELECT avg(goal)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	14	15:58:42	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14
+ LIMIT 0, 1000	294 row(s) returned	0.000 sec / 0.000 sec
+3	15	15:59:00	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000
+ LIMIT 0, 1000	60 row(s) returned	0.000 sec / 0.000 sec
+3	16	15:59:14	SELECT avg(goal)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	17	15:59:39	SELECT avg(backers)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	18	15:59:59	SELECT max(backers)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	19	16:00:05	SELECT avg(backers)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000
+ LIMIT 0, 1000	1 row(s) returned	0.016 sec / 0.000 sec
+3	20	16:02:08	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000
+ LIMIT 0, 1000	60 row(s) returned	0.000 sec / 0.000 sec
+3	21	16:02:42	SELECT count(country_id)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	22	16:02:47	SELECT count(country_id=2)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	23	16:02:51	SELECT count(country_id=1)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	24	16:03:06	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000 and country_id=2
+ LIMIT 0, 1000	1 row(s) returned	0.016 sec / 0.000 sec
+3	25	16:03:09	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000 and country_id=1
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	26	16:03:21	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000 and country_id=2
+ LIMIT 0, 1000	1 row(s) returned	0.016 sec / 0.000 sec
+0	27	16:05:00	SELECT DATEDIFF(WEEK, LAUNCHED, DEADLINE) AS DATEDIFF
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000 and country_id=2
+ LIMIT 0, 1000	Error Code: 1582. Incorrect parameter count in the call to native function 'DATEDIFF'	0.016 sec
+0	28	16:05:11	SELECT DATE_DIFF(WEEK, LAUNCHED, DEADLINE) AS DATEDIFF
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000 and country_id=2
+ LIMIT 0, 1000	Error Code: 1305. FUNCTION kickstata.DATE_DIFF does not exist	0.000 sec
+0	29	16:05:49	SELECT datediff(WEEK, LAUNCHED, DEADLINE) AS datedifference
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000 and country_id=2
+ LIMIT 0, 1000	Error Code: 1582. Incorrect parameter count in the call to native function 'datediff'	0.000 sec
+3	30	16:06:00	SELECT datediff(LAUNCHED, DEADLINE) AS datedifference
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000 and country_id=2
+ LIMIT 0, 1000	50 row(s) returned	0.016 sec / 0.000 sec
+3	31	16:06:19	SELECT datediff(DEADLINE,LAUNCHED) AS datedifference
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000 and country_id=2
+ LIMIT 0, 1000	50 row(s) returned	0.000 sec / 0.000 sec
+3	32	16:06:38	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000 and country_id=2
+ LIMIT 0, 1000	50 row(s) returned	0.000 sec / 0.000 sec
+3	33	16:07:11	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE  c.sub_category_id=14
+ LIMIT 0, 1000	553 row(s) returned	0.016 sec / 0.000 sec
+3	34	16:07:17	SELECT count(8)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE  c.sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	35	16:07:20	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE  c.sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	36	16:07:44	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 
+ ##and goal >= 15000 and country_id=2;
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	37	16:07:50	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000 and country_id=2
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	38	16:08:00	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 and goal >= 15000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	39	16:11:58	SELECT * FROM kickstata.campaign
+ LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.000 sec
+3	40	16:12:41	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "failed" and c.sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	41	16:12:54	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	42	16:13:05	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	43	16:13:12	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	44	16:16:10	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=15000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	45	16:17:04	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=30000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	46	16:17:32	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	47	16:18:24	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "SUCCESSFUL" and c.sub_category_id=14 and goal >=30000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	48	16:18:39	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "FAILED" and c.sub_category_id=14 and goal >=30000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	49	16:18:48	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "SUCCESSFUL" and c.sub_category_id=14 and goal >=50000
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	50	16:27:05	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "SUCCESSFUL" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	51	16:27:13	SELECT GOAL
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "SUCCESSFUL" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;
+ LIMIT 0, 1000	294 row(s) returned	0.000 sec / 0.000 sec
+3	52	16:27:33	SELECT GOAL
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "FAILED" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;
+ LIMIT 0, 1000	165 row(s) returned	0.000 sec / 0.000 sec
+3	53	17:06:49	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "FAILED" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	54	17:07:04	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+0	55	17:18:51	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT * 
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	Error Code: 1222. The used SELECT statements have a different number of columns	0.000 sec
+3	56	17:19:05	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT * 
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	30002 row(s) returned	0.187 sec / 0.047 sec
+0	57	17:22:41	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT SUM(PLEDGED)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	Error Code: 1222. The used SELECT statements have a different number of columns	0.000 sec
+3	58	17:22:49	SELECT SUM(PLEDGED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT SUM(PLEDGED)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.078 sec / 0.000 sec
+3	59	17:22:59	SELECT SUM(PLEDGED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT SUM(PLEDGED)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.015 sec / 0.000 sec
+3	60	17:23:22	SELECT SUM(PLEDGED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT SUM(PLEDGED)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ WHERE subc.category_id=1
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.015 sec / 0.000 sec
+3	61	17:24:52	SELECT SUM(PLEDGED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT count(*)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ WHERE subc.category_id=1
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.031 sec / 0.000 sec
+3	62	17:25:09	SELECT SUM(PLEDGED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT count(*)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ WHERE subc.category_id=2
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.015 sec / 0.000 sec
+3	63	17:25:18	SELECT SUM(PLEDGED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT count(*)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.016 sec / 0.000 sec
+3	64	17:25:21	SELECT SUM(PLEDGED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT count(*)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ WHERE subc.category_id=4
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.016 sec / 0.000 sec
+3	65	17:25:49	SELECT SUM(PLEDGED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT count(*)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ WHERE subc.category_id=7
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.016 sec / 0.000 sec
+3	66	17:25:52	SELECT SUM(PLEDGED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT count(*)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ WHERE subc.category_id=1
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.031 sec / 0.000 sec
+3	67	17:25:54	SELECT SUM(PLEDGED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT count(*)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ WHERE subc.category_id=2
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.016 sec / 0.000 sec
+3	68	17:25:56	SELECT SUM(PLEDGED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT count(*)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.032 sec / 0.000 sec
+3	69	17:26:28	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT max(category_id)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.015 sec / 0.000 sec
+3	70	17:26:56	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT count(category_id=1)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	2 row(s) returned	0.016 sec / 0.000 sec
+3	71	17:28:00	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	30002 row(s) returned	0.172 sec / 0.047 sec
+3	72	17:29:39	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT distinct (category_id)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	16 row(s) returned	0.031 sec / 0.000 sec
+0	73	17:32:36	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT distinct *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	Error Code: 1222. The used SELECT statements have a different number of columns	0.000 sec
+0	74	17:32:41	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	Error Code: 1222. The used SELECT statements have a different number of columns	0.000 sec
+0	75	17:32:47	SELECT 
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.i' at line 2	0.000 sec
+3	76	17:32:49	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	30002 row(s) returned	0.219 sec / 0.062 sec
+0	77	17:34:03	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	Error Code: 1222. The used SELECT statements have a different number of columns	0.000 sec
+0	78	17:34:33	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ group by sub_category_id
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT *
+ FR' at line 4	0.000 sec
+0	79	17:34:38	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ group by sub_category_id
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT count(*)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT coun' at line 4	0.000 sec
+3	80	17:34:47	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ group by sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;
+ LIMIT 0, 1000	157 row(s) returned	0.016 sec / 0.000 sec
+0	81	17:36:32	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ group by category_id
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT count(*) 
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT coun' at line 4	0.000 sec
+0	82	17:36:50	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ group by category_id
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT id, category_id 
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT id, ' at line 4	0.000 sec
+3	83	17:37:56	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	15015 row(s) returned	0.125 sec / 0.031 sec
+3	84	17:38:22	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT sub_category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.047 sec / 0.000 sec
+3	85	17:38:40	SELECT category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT sub_category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.046 sec / 0.000 sec
+3	86	17:38:48	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.047 sec / 0.000 sec
+0	87	17:39:37	SELECT sub_category_id, category_id, (pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	Error Code: 1222. The used SELECT statements have a different number of columns	0.000 sec
+3	88	17:39:51	SELECT category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.032 sec / 0.000 sec
+3	89	17:45:04	SELECT category_id, sum(BACKERS)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(BACKERS)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.047 sec / 0.000 sec
+0	90	17:46:58	SELECT category_id, DATE_DIFF(DEADLINE, LAUNCHED)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, DATE_DIFF(DEADLINE, LAUNCHED)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	Error Code: 1305. FUNCTION kickstata.DATE_DIFF does not exist	0.000 sec
+0	91	17:47:17	SELECT category_id, DATE_DIFF(DEADLINE, LAUNCHED) AS DAYSLONG
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(BACKERS)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	Error Code: 1305. FUNCTION kickstata.DATE_DIFF does not exist	0.000 sec
+3	92	17:47:24	SELECT category_id, DATEDIFF(DEADLINE, LAUNCHED) AS DAYSLONG
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(BACKERS)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	848 row(s) returned	0.046 sec / 0.000 sec
+3	93	17:48:15	SELECT category_id, AVG(DATEDIFF(DEADLINE, LAUNCHED)) AS DAYSLONG
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(BACKERS)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.047 sec / 0.000 sec
+3	94	17:54:14	SELECT category_id, AVG(DATEDIFF(DEADLINE, LAUNCHED)) AS DAYSLONG
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, AVG(DATEDIFF(DEADLINE, LAUNCHED)) AS DAYSLONG
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.047 sec / 0.000 sec
+3	95	17:59:18	SELECT country_id, SUM(PLEDGED)
+ FROM campaign
+ GROUP BY country_id
+ #LEFT JOIN sub_category as subc 
+ #ON c.sub_category_id = subc.id
+ #UNION
+ #SELECT category_id, AVG(DATEDIFF(DEADLINE, LAUNCHED)) AS DAYSLONG
+ #FROM sub_category AS subc
+ #LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ #group by category_id;
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;
+ LIMIT 0, 1000	22 row(s) returned	0.031 sec / 0.000 sec
+3	96	18:00:12	SELECT country_id, COUNT(OUTCOME="successful")
+ FROM campaign
+ GROUP BY country_id
+ #LEFT JOIN sub_category as subc 
+ #ON c.sub_category_id = subc.id
+ #UNION
+ #SELECT category_id, AVG(DATEDIFF(DEADLINE, LAUNCHED)) AS DAYSLONG
+ #FROM sub_category AS subc
+ #LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ #group by category_id;
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;
+ LIMIT 0, 1000	22 row(s) returned	0.016 sec / 0.000 sec
+0	97	18:02:10	SELECT DATEDIFF(DEADLINE, LAUNCHED) AS DAYSLONG
+ FROM campaign
+ GROUP BY country_id
+ WHERE OUTCOME="SUCCESSFUL"
+ #LEFT JOIN sub_category as subc 
+ #ON c.sub_category_id = subc.id
+ #UNION
+ #SELECT category_id, AVG(DATEDIFF(DEADLINE, LAUNCHED)) AS DAYSLONG
+ #FROM sub_category AS subc
+ #LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ #group by category_id;
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE OUTCOME="SUCCESSFUL"
+ #LEFT JOIN sub_category as subc 
+ #ON c.sub_category_i' at line 4	0.000 sec
+3	98	18:02:51	SELECT DATEDIFF(DEADLINE, LAUNCHED) AS DAYSLONG
+ FROM campaign
+ WHERE outcome="SUCCESSFUL"
+ LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.000 sec
+3	99	18:03:05	SELECT avg(DATEDIFF(DEADLINE, LAUNCHED)) AS DAYSLONG
+ FROM campaign
+ WHERE outcome="SUCCESSFUL"
+ LIMIT 0, 1000	1 row(s) returned	0.016 sec / 0.000 sec
+3	100	18:03:22	SELECT avg(DATEDIFF(DEADLINE, LAUNCHED)) AS DAYSLONG
+ FROM campaign
+ WHERE outcome="failed"
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+0	101	18:12:13	SELECT avg(DATEDIFF(DEADLINE, LAUNCHED)) AS DAYSLONG
+ FROM campaign as c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, AVG(DATEDIFF(DEADLINE, LAUNCHED)) AS DAYSLONG
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	Error Code: 1222. The used SELECT statements have a different number of columns	0.000 sec
+3	102	18:12:44	SELECT category_id, sum(pledged)
+ FROM campaign as c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.031 sec / 0.000 sec
+0	103	18:13:41	SELECT category.id, sum(pledged)
+ FROM campaign as c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	Error Code: 1054. Unknown column 'category.id' in 'field list'	0.000 sec
+3	104	18:14:30	SELECT category_id, sum(pledged)
+ FROM campaign as c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.031 sec / 0.000 sec
+0	105	18:14:47	SELECT category_id, sum(pledged)
+ FROM campaign as c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged), category.name
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	Error Code: 1054. Unknown column 'category.name' in 'field list'	0.000 sec
+3	106	18:15:17	SELECT category_id, sum(pledged)
+ FROM campaign as c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.031 sec / 0.000 sec
+0	107	18:15:32	SELECT category_id, sum(pledged)
+ FROM campaign as c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	Error Code: 1222. The used SELECT statements have a different number of columns	0.000 sec
+3	108	18:15:38	SELECT  sum(pledged)
+ FROM campaign as c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.016 sec / 0.000 sec
+0	109	18:15:50	SELECT category_id, sum(pledged)
+ FROM campaign as c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	Error Code: 1222. The used SELECT statements have a different number of columns	0.000 sec
+3	110	18:15:57	SELECT category_id, sum(pledged)
+ FROM campaign as c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.047 sec / 0.000 sec
+3	111	18:17:03	SELECT category_id, sum(pledged)
+ FROM campaign as c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by category_id
+ LIMIT 0, 1000	15 row(s) returned	0.047 sec / 0.000 sec
+0	112	18:17:04	UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campa' at line 1	0.000 sec
+3	113	18:20:57	SELECT category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.062 sec / 0.000 sec
+0	114	18:21:31	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by sub_category_id
+ where category_id=7	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where category_id=7' at line 10	0.000 sec
+0	115	18:22:18	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ group by sub_category_id
+ where category_id=7	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where category_id=7' at line 4	0.000 sec
+3	116	18:22:35	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by sub_category_id	159 row(s) returned	0.047 sec / 0.000 sec
+3	117	18:22:51	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.047 sec / 0.000 sec
+3	118	18:59:35	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ where category_id=7	2 row(s) returned	0.031 sec / 0.000 sec
+3	119	19:00:02	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT sub_category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ where category_id=7	2 row(s) returned	0.032 sec / 0.000 sec
+3	120	19:00:28	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where category_id=7
+ UNION
+ SELECT sub_category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ where category_id=7	1 row(s) returned	0.016 sec / 0.000 sec
+3	121	19:01:24	SELECT *, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where category_id=7
+ UNION
+ SELECT *, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ where category_id=7	2 row(s) returned	0.016 sec / 0.000 sec
+3	122	19:01:35	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where category_id=7
+ UNION
+ SELECT *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ where category_id=7	2686 row(s) returned	0.016 sec / 0.015 sec
+3	123	19:03:04	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.category_id=7
+ UNION
+ SELECT *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ where subc.category_id=7	2686 row(s) returned	0.015 sec / 0.000 sec
+3	124	19:04:52	DROP DATABASE `ks`	5 row(s) affected	0.219 sec
+3	125	19:04:57	SELECT *
+ FROM campaign AS c
+ 
+ 
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;
+ LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.000 sec
+3	126	19:05:56	SELECT *
+ FROM campaign AS c
+ where sub_category_id = 14
+ LIMIT 0, 1000	553 row(s) returned	0.015 sec / 0.000 sec
+3	127	19:06:41	SELECT goal, pledged, outcome
+ FROM campaign AS c
+ where sub_category_id = 14
+ LIMIT 0, 1000	553 row(s) returned	0.000 sec / 0.000 sec
+3	128	19:26:46	select count(*)
+ FROM campaign AS c
+ where sub_category_id = 14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	129	19:27:02	select count(*)
+ FROM campaign AS c
+ where sub_category_id = 14 and outcome="successful"
+ LIMIT 0, 1000	1 row(s) returned	0.031 sec / 0.000 sec
+3	130	19:27:06	select count(*)
+ FROM campaign AS c
+ where sub_category_id = 14 and outcome!="successful"
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	131	19:28:22	select *
+ FROM campaign AS c
+ where sub_category_id = 14 and outcome!="successful" and outcome!="failed"
+ LIMIT 0, 1000	94 row(s) returned	0.000 sec / 0.000 sec
+3	132	19:30:26	SELECT goal, pledged, outcome
+ 
+ FROM campaign AS c
+ where sub_category_id = 14 and outcome!="successful" and outcome!="failed"
+ LIMIT 0, 1000	94 row(s) returned	0.000 sec / 0.000 sec
+3	133	19:30:37	SELECT goal, pledged, outcome
+ 
+ FROM campaign AS c
+ where sub_category_id = 14
+ LIMIT 0, 1000	553 row(s) returned	0.000 sec / 0.000 sec
+3	134	19:30:57	SELECT goal, pledged, outcome
+ 
+ FROM campaign AS c
+ where sub_category_id = 14 and goal >=15000
+ LIMIT 0, 1000	161 row(s) returned	0.000 sec / 0.000 sec
+3	135	20:41:57	SELECT count(*)
+ 
+ FROM campaign AS c
+ #where sub_category_id = 14 and goal >=15000;
+ 
+ 
+ 
+ 
+ #WHERE subc.category_id=3
+ ##WHERE c.outcome = "successful" and c.sub_category_id=14 
+ 
+ 
+ 
+ ##and goal >=50000;
+ ##WHERE c.outcome = "failed" and c.sub_category_id=14 and goal >=50000;
+ LIMIT 0, 1000	1 row(s) returned	0.015 sec / 0.000 sec
+3	136	20:42:32	SELECT count(*)
+ 
+ FROM campaign AS c
+ where outcome="successful"
+ LIMIT 0, 1000	1 row(s) returned	0.016 sec / 0.000 sec
+3	137	20:44:21	SELECT count(*)
+ 
+ FROM campaign AS c
+ where outcome!="successful" and outcome!= "failed"
+ LIMIT 0, 1000	1 row(s) returned	0.016 sec / 0.000 sec
+3	138	20:44:32	SELECT distinct outcome
+ 
+ FROM campaign AS c
+ where outcome!="successful" and outcome!= "failed"
+ LIMIT 0, 1000	4 row(s) returned	0.016 sec / 0.000 sec
+0	139	20:47:31	SELECT distinct outcome
+ 
+ FROM campaign AS c
+ where category_id=7 and outcome!= "failed"
+ LIMIT 0, 1000	Error Code: 1054. Unknown column 'category_id' in 'where clause'	0.000 sec
+3	140	20:48:27	SELECT category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.062 sec / 0.000 sec
+0	141	20:48:36	SELECT category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ group by category_id
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'group by category_id
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, su' at line 4	0.000 sec
+0	142	20:48:42	SELECT category_id, sum(pledged)
+ FROM campaign AS c
+ group by category_id
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	Error Code: 1064. You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT cate' at line 4	0.000 sec
+3	143	20:48:49	SELECT category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.047 sec / 0.000 sec
+3	144	20:49:12	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT *
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id	30002 row(s) returned	0.375 sec / 0.079 sec
+3	145	20:49:51	SELECT *
+ FROM campaign AS c
+ LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.000 sec
+3	146	20:50:20	SELECT *
+ FROM campaign AS c
+ where sub_category_id=14
+ LIMIT 0, 1000	553 row(s) returned	0.000 sec / 0.000 sec
+3	147	20:50:35	SELECT count(*)
+ FROM campaign AS c
+ where sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	148	20:50:49	SELECT *
+ FROM campaign AS c
+ where sub_category_id=14
+ LIMIT 0, 1000	553 row(s) returned	0.000 sec / 0.000 sec
+3	149	20:54:20	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by subc.category_id
+ LIMIT 0, 1000	15 row(s) returned	0.031 sec / 0.000 sec
+3	150	20:54:32	SELECT sub_category_id, (pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by subc.category_id
+ LIMIT 0, 1000	15 row(s) returned	0.015 sec / 0.000 sec
+3	151	20:54:45	SELECT sub_category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by subc.category_id
+ LIMIT 0, 1000	15 row(s) returned	0.031 sec / 0.000 sec
+0	152	20:55:21	SELECT sub_category_id, sum(pledged), name
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by subc.category_id
+ LIMIT 0, 1000	Error Code: 1052. Column 'name' in field list is ambiguous	0.000 sec
+3	153	20:55:25	SELECT sub_category_id, sum(pledged), subc.name
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by subc.category_id
+ LIMIT 0, 1000	15 row(s) returned	0.032 sec / 0.000 sec
+3	154	20:55:52	SELECT sub_category_id, sum(pledged), subc.name
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.category_id = 7
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	155	20:56:28	SELECT sum(pledged), subc.name
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.category_id = 7
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	156	20:59:02	SELECT sum(pledged), subc.name
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.category_id = 7
+ group by category_id
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	157	20:59:11	SELECT sum(pledged), subc.name
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by category_id
+ LIMIT 0, 1000	15 row(s) returned	0.046 sec / 0.000 sec
+3	158	21:00:22	SELECT subc.name
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by category_id
+ LIMIT 0, 1000	15 row(s) returned	0.015 sec / 0.000 sec
+3	159	21:00:29	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by category_id
+ LIMIT 0, 1000	15 row(s) returned	0.062 sec / 0.000 sec
+3	160	21:00:46	SELECT *
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.016 sec
+3	161	21:01:05	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	162	21:01:57	SELECT count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	163	21:03:03	SELECT avg(goal)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where sub_category_id=14 and outcome="successful"
+ LIMIT 0, 1000	1 row(s) returned	0.016 sec / 0.000 sec
+3	164	21:04:32	SELECT avg(goal)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.016 sec / 0.000 sec
+3	165	21:05:52	SELECT avg(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	166	21:07:02	SELECT avg(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where sub_category_id=14 and outcome = "successful"
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	167	21:07:31	SELECT pledged
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where sub_category_id=14 and outcome = "successful"
+ LIMIT 0, 1000	294 row(s) returned	0.000 sec / 0.000 sec
+3	168	21:08:06	SELECT avg(backers)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where sub_category_id=14 and outcome = "successful"
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	169	21:08:32	SELECT avg(backers)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	170	21:19:32	SELECT * FROM kickstata.category
+ LIMIT 0, 1000	15 row(s) returned	0.000 sec / 0.000 sec
+3	171	21:21:06	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.category_id=7
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	172	21:21:16	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.category_id=2
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	173	21:21:51	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.category_id=7
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	174	21:27:10	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.category_id=7
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	175	21:27:33	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.category_id=13
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	176	21:28:02	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.category_id=2
+ LIMIT 0, 1000	1 row(s) returned	0.015 sec / 0.000 sec
+3	177	21:28:55	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ LIMIT 0, 1000	1 row(s) returned	0.016 sec / 0.000 sec
+3	178	21:29:09	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by subc.category_id
+ LIMIT 0, 1000	15 row(s) returned	0.032 sec / 0.000 sec
+3	179	21:29:24	SELECT subc.category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by subc.category_id
+ LIMIT 0, 1000	15 row(s) returned	0.031 sec / 0.000 sec
+3	180	21:33:59	SELECT subc.category_id, sum(backers)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by subc.category_id
+ LIMIT 0, 1000	15 row(s) returned	0.031 sec / 0.000 sec
+3	181	21:39:49	SELECT c.country_id, sum(backers)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by c.country_id
+ LIMIT 0, 1000	22 row(s) returned	0.032 sec / 0.000 sec
+3	182	21:40:58	SELECT c.country_id, count(*)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by c.country_id
+ LIMIT 0, 1000	22 row(s) returned	0.031 sec / 0.000 sec
+3	183	21:45:06	SELECT pledged
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.id = 14
+ LIMIT 0, 1000	553 row(s) returned	0.000 sec / 0.000 sec
+3	184	21:45:13	SELECT pledged
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.id = 14 and outcome="successful"
+ LIMIT 0, 1000	294 row(s) returned	0.000 sec / 0.000 sec
+3	185	21:45:32	SELECT count(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.id = 14 and outcome="successful"
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	186	21:47:22	SELECT count(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.id = 14 and outcome="failed"
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	187	21:47:29	SELECT pledged
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.id = 14 and outcome="failed"
+ LIMIT 0, 1000	165 row(s) returned	0.000 sec / 0.000 sec
+3	188	22:40:16	SELECT sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.id = 14 and outcome="failed"
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	189	22:40:34	SELECT avg(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where subc.id = 14 and outcome="succesful"
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	190	22:40:51	SELECT avg(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ where c.sub_category_id = 14 and outcome="succesful"
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	191	22:41:12	SELECT avg(pledged)
+ FROM campaign AS c
+ where sub_category_id = 14 and outcome="succesful"
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	192	22:41:18	SELECT * FROM kickstata.campaign
+ LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.016 sec
+3	193	22:41:36	SELECT avg(pledged)
+ FROM campaign 
+ where sub_category_id = 14 and outcome="succesful"
+ LIMIT 0, 1000	1 row(s) returned	0.015 sec / 0.000 sec
+3	194	22:42:04	SELECT pledged
+ FROM campaign 
+ where sub_category_id = 14 and outcome="succesful"
+ LIMIT 0, 1000	0 row(s) returned	0.000 sec / 0.000 sec
+3	195	22:42:25	select *
+ from campaign
+ LIMIT 0, 1000	1000 row(s) returned	0.000 sec / 0.000 sec
+3	196	22:42:34	select *
+ from campaign
+ where sub_category_id=14
+ LIMIT 0, 1000	553 row(s) returned	0.000 sec / 0.000 sec
+3	197	22:42:42	select count(*)
+ from campaign
+ where sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	198	22:42:51	select count(pledged)
+ from campaign
+ where sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	199	22:42:55	select sum(pledged)
+ from campaign
+ where sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	200	22:43:01	select avg(pledged)
+ from campaign
+ where sub_category_id=14
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	201	22:43:20	select avg(pledged)
+ from campaign
+ where sub_category_id=14 and outcome="successful"
+ LIMIT 0, 1000	1 row(s) returned	0.000 sec / 0.000 sec
+3	202	22:46:09	SELECT category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by category_id	16 row(s) returned	0.031 sec / 0.000 sec
+3	203	22:47:39	SELECT category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by subc.category_id	16 row(s) returned	0.047 sec / 0.000 sec
+3	204	22:47:57	SELECT category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by subc.category_id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id
+ group by subc.category_id	28 row(s) returned	0.047 sec / 0.000 sec
+3	205	22:48:24	SELECT category_id, sum(pledged)
+ FROM campaign AS c
+ LEFT JOIN sub_category as subc 
+ ON c.sub_category_id = subc.id
+ group by subc.category_id
+ UNION
+ SELECT category_id, sum(pledged)
+ FROM sub_category AS subc
+ LEFT JOIN campaign AS c on subc.id = c.sub_category_id	16 row(s) returned	0.031 sec / 0.000 sec
+3	206	23:01:05	SELECT goal, pledged
+ FROM campaign AS c
+ where c.sub_category_id=14 and outcome="successful"
+ LIMIT 0, 1000	294 row(s) returned	0.000 sec / 0.000 sec
